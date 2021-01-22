@@ -1,3 +1,15 @@
+/*
+
+Stack is sequential storing data structure and follows the Last-in-First-Out principle
+Reference - https://youtu.be/F1F2imiOJfk
+Implementation - https://youtu.be/sFVxsglODoo            
+
+
+*/
+
+
+
+
 #include<stdio.h>
 int stack[100],choice,n,top,x,i;
 void push(void);
