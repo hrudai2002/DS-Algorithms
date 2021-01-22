@@ -1,4 +1,11 @@
-// Insertion sort
+/*
+Insertion sort is used sort the array in ascending or descending order.
+Time Complexity - O(n*2).
+Insertion sort is better than Bubble,Selection sort.
+Reference - https://youtu.be/i-SKeOcBwko
+
+
+*/
 #include <stdio.h>
 #include <stdlib.h>
  void Insertionsort(int ar[],int n){
