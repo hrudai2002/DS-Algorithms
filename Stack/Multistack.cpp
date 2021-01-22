@@ -1,3 +1,9 @@
+/* 
+Multistack is having multiple stacks in single stack
+here you can see the implementation of the multiple stack is array
+*/
+
+
 #include <stdio.h>
 #define max 50
  
