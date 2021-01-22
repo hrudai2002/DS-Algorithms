@@ -1,4 +1,8 @@
-// Bubble sort
+/* 
+ Bubble sort is used to sort an array in ascending or descending order
+ Time Complexity - O(n*2)
+ Reference - https://youtu.be/Jdtq5uKz-w4
+ */
 #include <stdio.h>
 #include <stdlib.h>
  void Bubblesort(int a[],int n){
