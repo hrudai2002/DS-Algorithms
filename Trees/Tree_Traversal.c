@@ -1,3 +1,17 @@
+/* 
+
+This the code  for tree traversal
+-> Preorder
+-> Inorder
+-> Postorder
+
+if you like give me a ⭐
+
+
+*/
+
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #define MAX 100
