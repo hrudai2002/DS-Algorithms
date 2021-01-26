@@ -1,6 +1,6 @@
 /* 
 
-This the code  for tree traversal
+This is  the code  for tree traversal
 -> Preorder
 -> Inorder
 -> Postorder
