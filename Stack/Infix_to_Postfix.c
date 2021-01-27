@@ -1,3 +1,12 @@
+/* 
+
+Converting an infix expression to postfix expression
+
+
+*/
+
+
+
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
