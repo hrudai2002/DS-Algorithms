@@ -1,3 +1,11 @@
+/* 
+
+Implementing the dequeue using array
+
+
+*/
+
+
 # include<stdio.h>
 # define MAX 5
 
