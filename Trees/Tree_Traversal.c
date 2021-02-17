@@ -5,7 +5,7 @@ This is  the code  for tree traversal
 -> Inorder
 -> Postorder
 
-if you like give me a ⭐
+
 
 
 */
