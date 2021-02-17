@@ -27,7 +27,7 @@ void heapify(int i){
        smallest = r;
     if(smallest != i){
         swap(&Heap[i],&Heap[smallest]);
-        heapify(i);
+        heapify(smallest);
     }
 }
 void insert(int  value){
