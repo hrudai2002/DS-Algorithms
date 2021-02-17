@@ -27,7 +27,7 @@ void heapify(int i){
        largest = r;
     if(largest != i){
         swap(&Heap[i],&Heap[largest]);
-        heapify(i);
+        heapify(largest);
     }
 }
 void insert(int  value){
