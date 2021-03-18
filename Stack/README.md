@@ -72,3 +72,4 @@ top ← top – 1
 return data
 
 end procedure
+
