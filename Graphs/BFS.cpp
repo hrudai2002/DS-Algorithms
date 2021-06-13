@@ -8,29 +8,24 @@ int n, front, rear;
 void BFS() {
     int visited[n + 1]; // keeping track of visited elements
     for(int i = 1; i <= n; ++i) visited[i] = 0;
-    
     int src = 1;
     visited[src] = 1;
-   
     int flag = 0;
     printf("%d ",src);
     
-    while(front <= rear) {
-        if(flag == 0) rear = -1, flag = 1;
+     while(front <= rear) {
+        if(flag == 0) rear = -1, flag = 1; // keeping rear = -1 so that rear starts iterating from 0
         for(int i = 1; i <= n; ++i) {
             if(adj[src][i] == 1 && visited[i] == 0) {
                 rear += 1;
                 q[rear] = i;
                 visited[i] = 1;
-                
             }
-        }
-      
+      }
         src = q[front];
         printf("%d ",q[front]);
         front++;
-        
-    }
+     }
 }
 
 int main() {
