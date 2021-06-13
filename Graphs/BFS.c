@@ -1,3 +1,9 @@
+/*   
+Implementation of BFS using adjacency Matrix 
+Time Complexity O(n*e) 
+n - number of vertices
+e - number of edges
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #define SIZE 100 
@@ -29,9 +35,7 @@ void BFS() {
 }
 
 int main() {
-  
-   /* 
-      input:
+   /* input:
       5 
       0 1 1 1 0
       1 0 1 0 1
@@ -40,16 +44,13 @@ int main() {
       0 1 1 1 0
       
       output:
-      1 2 3 4 5
-   
-   */
-
-    scanf("%d",&n);  // No of vertices
-    for(int i = 1; i <= n; ++i) {  // Adjacency Matrix
-        for(int j = 1; j <= n; ++j) {
-            scanf("%d", &adj[i][j]);
+      1 2 3 4 5   */
+      scanf("%d",&n);  // No of vertices
+      for(int i = 1; i <= n; ++i) {  // Adjacency Matrix
+       for(int j = 1; j <= n; ++j) {
+              scanf("%d", &adj[i][j]);
+           }
         }
-    }
-    BFS(); // BFS traversal
-    return 0;
+      BFS(); // BFS traversal
+      return 0;
 }
