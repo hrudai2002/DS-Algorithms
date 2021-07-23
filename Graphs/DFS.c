@@ -6,8 +6,7 @@ Implementation of DFS using Adjacency Matrix
 #define SIZE 100
 int n;
 int adj[SIZE][SIZE];
-int q[SIZE];
-int front, rear;
+
 
 void DFS(int src, int visited[]) {
    if(visited[src] == 0) {
