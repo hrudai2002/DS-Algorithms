@@ -70,6 +70,7 @@ int main() {
     while(top > -1) {
        src = stack[top];
        printf("%d ", src);
+       visited[src] = 1;
        top--;
        for(int i = 0; i <= n; ++i) {
          if(adj[src][i]) {
