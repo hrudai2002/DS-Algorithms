@@ -57,5 +57,25 @@ int main() {
     for(int i = 1; i <= n; ++i) visited[i] = 0;
     
     DFS(1, visited);
+    // Without Recusrion
+    int stack[SIZE];
+    int top = -1;
+    int src = 1;
+    visited[src] = 1;
+    for(int i = 1; i <= n; ++i) {
+       if(adj[src][i]){
+           stack[++top] = i;
+       }
+    }
+    while(top > -1) {
+       src = stack[top];
+       printf("%d ", src);
+       top--;
+       for(int i = 0; i <= n; ++i) {
+         if(adj[src][i]) {
+           stack[++top] = i;
+         }
+       }
+    }
     return 0;
 }
