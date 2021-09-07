@@ -49,6 +49,21 @@ int search(struct BstNode* root, int  data){
     root = root->right;
   }
 }
+
+/* Height of the Tree */
+int height(struct Node* root) {
+     if(root == NULL) {
+		 return 0;
+	 } 
+	 int left  = height(root->left);
+	 int right = height(root->right);
+
+	 return max(left, right) + 1;
+
+	
+}
+
+
 struct BstNode* findMin(struct BstNode* root){
      
      while(root->left != NULL) root = root->left;
