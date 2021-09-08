@@ -1,6 +1,7 @@
 #include <stdio.h>
 #define MAX 100
 #define INF 9999
+int adj[MAX][MAX];
 void Dijkstra(int adj[MAX][MAX], int n, int src) {
     int cost[n + 1][n + 1], visited[n + 1], dis[n + 1];
     for(int i = 1; i <= n; ++i) {
