@@ -129,21 +129,24 @@ struct Node *deleteNode(struct Node *root, int key){
     root->right = deleteNode(root->right, key);
 
   else {
-    if ((root->left == NULL) || (root->right == NULL)) {
-      struct Node *temp = root->left ? root->left : root->right;
-
-      if (temp == NULL) {
-        temp = root;
-        root = NULL;
-      } else
-        *root = *temp;
+    if(root->right == NULL && root->left == NULL){
+         root = NULL;
+    }
+    else if(root->right == NULL){
+      struct BstNode* temp = root;
+      root = root->left;
       free(temp);
-    } else {
-      struct Node *temp = minValueNode(root->right);
+    }
+    else if(root->left == NULL){
+      struct BstNode* temp = root;
+      root = root->right;
+      free(temp);
+    }
 
-      root->key = temp->key;
-
-      root->right = deleteNode(root->right, temp->key);
+    else{
+      struct BstNode* temp = findMin(root->right);
+      root->data = temp->data;
+      root->right = Delete(root->right,temp->data);
     }
   }
 
