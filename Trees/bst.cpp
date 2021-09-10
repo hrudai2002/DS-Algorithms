@@ -17,6 +17,9 @@ struct BstNode* GetnewNode(int data){
   return newNode;
 }
 
+int max(int a, int b) {
+    return (a > b) ? a : b;
+}
 /* Inserting a node in a Binary Search Tree */
 struct BstNode* Insert(struct BstNode* root,int data){
   
@@ -51,7 +54,7 @@ int search(struct BstNode* root, int  data){
 }
 
 /* Height of the Tree */
-int height(struct Node* root) {
+int height(struct BstNode* root) {
      if(root == NULL) {
 		 return 0;
 	 } 
@@ -130,4 +133,3 @@ int main(){
 
   return 0;
 }
-
